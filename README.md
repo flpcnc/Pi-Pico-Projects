@@ -38,7 +38,7 @@ Neste post, você aprenderá como interagir com o sensor DHT11 para medir a temp
 
 - EXEMPLO DE CODIGO:
 
-  [DHT11_EXEMPLO](codigos\DHT11\pi_pico_temp_display.py)
+  [DHT11_EXEMPLO](codigos/DHT11/pi_pico_temp_display.py)
 
 ## Post 2: Sensor de Pressão e Temperatura BMP280
 
@@ -70,10 +70,10 @@ Dados do Codigo Exemplo são Impressos no Console da IDE Thony
 
 ![Sensor BMP280](img/bmp280_Console_Thony.png)
 
-  [BMP280_EXEMPLO](codigos\BMP280\pi_pico_temp_pressao_bmp280.py)
+  [BMP280_EXEMPLO](codigos/BMP280/pi_pico_temp_pressao_bmp280.py)
   
 
-  [BIBLIOTECA BMP280.py](codigos\BMP280\bmp280.py)
+  [BIBLIOTECA BMP280.py](codigos/BMP280/bmp280.py)
 
   Autor da Biblioteca: bmp280.py
   David Stenwall (david at stenwall.io)
@@ -117,19 +117,19 @@ CODIGO ADAPTADO DO EXEMPLO PARA ARDUINO EM MICROPYTHON NO PI PICO:
 
 Para calcular a vazão, usamos o fator de conversão, que é fornecido pelo fabricante. Caso não seja fornecido, podemos calcular posteriormente. O programa calcula a frequência dos pulsos do sensor e, em seguida, converte para vazão usando o fator de conversão. No nosso caso, o fator de conversão é 7,5, mas você deve usar o fator apropriado do seu sensor. 
 
-[CODIGO: 01 - MEDIR O FLUXO](Codigos/Sensor_Fluxo/medicao_fluxo.py)
+[CODIGO: 01 - MEDIR O FLUXO](codigos/Sensor_Fluxo/medicao_fluxo.py)
 
 2 - PASSO: MEDINDO VOLUME OU CONSUMO DE ÁGUA
 
 Com a vazão, é possível medir o volume de água, uma vez que a vazão representa a mudança no volume ao longo do tempo. No monitor serial, recebemos informações sobre a vazão e o volume. Para redefinir o volume, basta enviar a letra 'r', e o volume será reiniciado em 0.
 
-[CODIGO: 02 - VOLUME OU CONSUMO DE ÁGUA](Codigos/Sensor_Fluxo/vol_consumo_agua.py)
+[CODIGO: 02 - VOLUME OU CONSUMO DE ÁGUA](codigos/Sensor_Fluxo/vol_consumo_agua.py)
 
 3 - PASSO: CALIBRAR O SENSOR
 
 Para obter medições precisas, é essencial calcular o fator de conversão, que relaciona a frequência de pulsos ao fluxo de água. Podemos medir o número de pulsos com precisão usando o Pi Pico e determinar o volume de água com um recipiente graduado. Utilizando essas duas variáveis, podemos calcular o fator de conversão usando a fórmula: K = (n°Pulsos / volume). Para obter resultados mais precisos, é recomendável realizar várias amostras e calcular a média. Em nosso caso, obtivemos um fator de conversão de 4,86, o que nos permite realizar medições mais precisas com base nesse valor.
 
-[CODIGO: 03 - CALIBRANDO O NOSSO SENSOR](Codigos/Sensor_Fluxo/calibrando_sensor_fluxo.py)
+[CODIGO: 03 - CALIBRANDO O NOSSO SENSOR](codigos/Sensor_Fluxo/calibrando_sensor_fluxo.py)
 
 LINK ORIGINAL ARDUINO: 
 [Tutorial YF-S201 para Arduino](https://naylampmechatronics.com/blog/47_tutorial-sensor-de-flujo-de-agua.html)
@@ -167,7 +167,7 @@ Impressão dos dados no Console e Envio para o Arquvivo data.csv
 ![Sensor BMP280](img/dht11_bmp280_dsiplay_data_csv_Console_Thony.png)
 
 
-[CODIGO: SENSORES INTEGRADOS DHT11, BMP280 e DISPLAY OLED, DATA.CSV](Codigos/DHT11_BMP280_DISPLAY_OLED/pico_dht11_bmp280_Oled_Display.py)
+[CODIGO: SENSORES INTEGRADOS DHT11, BMP280 e DISPLAY OLED, DATA.CSV](codigos/DHT11_BMP280_DISPLAY_OLED/pico_dht11_bmp280_Oled_Display.py)
 
 ## Contribuições
 
